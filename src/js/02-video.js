@@ -13,7 +13,7 @@ player.getVideoTitle().then(function (title) {
 
 player.on('timeupdate', throttle(function (obj) {
     localStorage.setItem("videoplayer-current-time", obj.seconds);
-},1000));
+}, 1000));
 
 const seconds = localStorage.getItem("videoplayer-current-time");
 if (seconds) {
